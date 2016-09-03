@@ -1,0 +1,21 @@
+Script started on Sun 30 Mar 2014 11:36:07 PM PDT
+]0;luis@luis-VirtualBox: ~/projects/triangleluis@luis-VirtualBox:~/projects/triangle$ make
+g++ -c test.cpp
+g++ -c triangle.cpp
+g++ test.o triangle.o
+]0;luis@luis-VirtualBox: ~/projects/triangleluis@luis-VirtualBox:~/projects/triangle$ ./a.out
+zero: Base: 0 Height: 0 Area: 0
+basic: Base: 5 Height: 10 Area: 25
+zero and basic are different
+
+zero after assignment: Base: 5 Height: 10 Area: 25
+basic2 using copy constructor: Base: 5 Height: 10 Area: 25
+sum = zero + basic: Base: 10 Height: 20 Area: 100
+triangle 1: Base: 1 Height: 2 Area: 1
+triangle 2: Base: 3 Height: 4 Area: 6
+triangle 3: Base: 5 Height: 6 Area: 15
+triangle 4: Base: 7 Height: 8 Area: 28
+]0;luis@luis-VirtualBox: ~/projects/triangleluis@luis-VirtualBox:~/projects/triangle$ end[K[Kxit
+exit
+
+Script done on Sun 30 Mar 2014 11:36:15 PM PDT

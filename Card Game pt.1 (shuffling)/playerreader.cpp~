@@ -1,0 +1,58 @@
+// header files
+#include <iostream>
+#include <cstdlib>
+#include <fstream>
+
+using namespace std;
+
+// global constants
+
+// structs 
+struct player 
+   {
+    char name[30];
+    int ID;
+    char hand[5];
+   };
+   
+// function prototypes
+
+// main program
+int main ()
+{
+   char filename[10];
+   ifstream fin;
+   player plyr[4];
+   int ndx = 0;
+   
+   cout << "Player Name File: ";
+   cin >> filename;
+   
+   fin.clear();
+   fin.open(filename);
+   
+   fin >> plyr[ndx].name;
+   fin >> plyr[ndx].ID;
+   ndx ++;
+   
+   while (ndx < 4)
+      {
+         fin >> plyr[ndx].name;
+         fin >> plyr[ndx].ID;
+         ndx++;
+      }
+   
+   fin.close();
+   
+   ndx = 0;
+    while (ndx < 4)
+      {
+         cout << plyr[ndx].name << endl;
+         cout << plyr[ndx].ID << endl << endl;
+         ndx ++;
+      }
+      
+   return 0;
+}
+
+// function implementation

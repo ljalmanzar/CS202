@@ -1,0 +1,115 @@
+Script started on Wed 19 Feb 2014 12:56:25 PM PST
+]0;luis@luis-VirtualBox: ~/projects/week4luis@luis-VirtualBox:~/projects/week4$ g++ shuffler4.cpp
+]0;luis@luis-VirtualBox: ~/projects/week4luis@luis-VirtualBox:~/projects/week4$ .a[K/a.out
+[H[2JEnter deck file name: deck
+
+Enter player name file: names
+
+
+
+
+
+
+
+
+[H[2JMain Menu
+
+1) Shuffle Deck
+2) Print Unshuffled Deck on Screen
+3) Print Shuffled Deck on Screen
+4) Show Players + ID #'s
+5) Quit
+
+Enter 1-5: 2
+
+heart 1 Unshuffled
+heart 2 Unshuffled
+heart 3 Unshuffled
+heart 4 Unshuffled
+heart 5 Unshuffled
+heart 6 Unshuffled
+heart 7 Unshuffled
+heart 8 Unshuffled
+heart 9 Unshuffled
+heart 10 Unshuffled
+heart 11 Unshuffled
+heart 12 Unshuffled
+heart 13 Unshuffled
+diamond 1 Unshuffled
+diamond 2 Unshuffled
+diamond 3 Unshuffled
+diamond 4 Unshuffled
+diamond 5 Unshuffled
+diamond 6 Unshuffled
+diamond 7 Unshuffled
+diamond 8 Unshuffled
+diamond 9 Unshuffled
+diamond 10 Unshuffled
+diamond 11 Unshuffled
+diamond 12 Unshuffled
+diamond 13 Unshuffled
+spade 1 Unshuffled
+spade 2 Unshuffled
+spade 3 Unshuffled
+spade 4 Unshuffled
+spade 5 Unshuffled
+spade 6 Unshuffled
+spade 7 Unshuffled
+spade 8 Unshuffled
+spade 9 Unshuffled
+spade 10 Unshuffled
+spade 11 Unshuffled
+spade 12 Unshuffled
+spade 13 Unshuffled
+club 1 Unshuffled
+club 2 Unshuffled
+club 3 Unshuffled
+club 4 Unshuffled
+club 5 Unshuffled
+club 6 Unshuffled
+club 7 Unshuffled
+club 8 Unshuffled
+club 9 Unshuffled
+club 10 Unshuffled
+club 11 Unshuffled
+club 12 Unshuffled
+club 13 Unshuffled
+
+
+Type 'C' and enter to return to menu... c
+
+[H[2JMain Menu
+
+1) Shuffle Deck
+2) Print Unshuffled Deck on Screen
+3) Print Shuffled Deck on Screen
+4) Show Players + ID #'s
+5) Quit
+
+Enter 1-5: 4
+
+Carlan 31769
+LaLa 15196
+Anthony 85411
+Alaina 52581
+Lenny 48162
+Trey 62397
+Troy 89456
+
+
+Type 'C' and enter to return to menu... c
+
+[H[2JMain Menu
+
+1) Shuffle Deck
+2) Print Unshuffled Deck on Screen
+3) Print Shuffled Deck on Screen
+4) Show Players + ID #'s
+5) Quit
+
+Enter 1-5: 5
+
+]0;luis@luis-VirtualBox: ~/projects/week4luis@luis-VirtualBox:~/projects/week4$ exit
+exit
+
+Script done on Wed 19 Feb 2014 12:57:36 PM PST

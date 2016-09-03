@@ -1,0 +1,250 @@
+Script started on Wed 05 Feb 2014 09:19:37 PM PST
+]0;luis@luis-VirtualBox: ~/Projects/week2luis@luis-VirtualBox:~/Projects/week2$ g++ shuffler2.cpp
+]0;luis@luis-VirtualBox: ~/Projects/week2luis@luis-VirtualBox:~/Projects/week2$ ./a.out
+Enter deck file name: deck
+
+heart 1
+heart 2
+heart 3
+heart 4
+heart 5
+heart 6
+heart 7
+heart 8
+heart 9
+heart 10
+heart 11
+heart 12
+heart 13
+diamond 1
+diamond 2
+diamond 3
+diamond 4
+diamond 5
+diamond 6
+diamond 7
+diamond 8
+diamond 9
+diamond 10
+diamond 11
+diamond 12
+diamond 13
+spade 1
+spade 2
+spade 3
+spade 4
+spade 5
+spade 6
+spade 7
+spade 8
+spade 9
+spade 10
+spade 11
+spade 12
+spade 13
+club 1
+club 2
+club 3
+club 4
+club 5
+club 6
+club 7
+club 8
+club 9
+club 10
+club 11
+club 12
+club 13
+
+Enter player name file: names
+
+Carlan 31769
+LaLa 15196
+Anthony 85411
+Alaina 52581
+
+Main Menu
+
+1) Shuffle Deck
+2) Print Unshuffled Deck on Screen
+3) Show Players + ID #'s
+4) Deal the deck
+5) Save the shuffled Deck in a File
+6) Quit
+
+Enter 1-6: 2
+
+heart 1 
+heart 2 
+heart 3 
+heart 4 
+heart 5 
+heart 6 
+heart 7 
+heart 8 
+heart 9 
+heart 10 
+heart 11 
+heart 12 
+heart 13 
+diamond 1 
+diamond 2 
+diamond 3 
+diamond 4 
+diamond 5 
+diamond 6 
+diamond 7 
+diamond 8 
+diamond 9 
+diamond 10 
+diamond 11 
+diamond 12 
+diamond 13 
+spade 1 
+spade 2 
+spade 3 
+spade 4 
+spade 5 
+spade 6 
+spade 7 
+spade 8 
+spade 9 
+spade 10 
+spade 11 
+spade 12 
+spade 13 
+club 1 
+club 2 
+club 3 
+club 4 
+club 5 
+club 6 
+club 7 
+club 8 
+club 9 
+club 10 
+club 11 
+club 12 
+club 13 
+
+
+Type 'C' and enter to return to menu... c
+
+[H[2JMain Menu
+
+1) Shuffle Deck
+2) Print Unshuffled Deck on Screen
+3) Show Players + ID #'s
+4) Deal the deck
+5) Save the shuffled Deck in a File
+6) Quit
+
+Enter 1-6: 3
+
+Carlan 31769
+LaLa 15196
+Anthony 85411
+Alaina 52581
+
+
+Type 'C' and enter to return to menu... c
+
+[H[2JMain Menu
+
+1) Shuffle Deck
+2) Print Unshuffled Deck on Screen
+3) Show Players + ID #'s
+4) Deal the deck
+5) Save the shuffled Deck in a File
+6) Quit
+
+Enter 1-6: 1
+
+diamond 8 shuffled
+diamond 6 shuffled
+diamond 4 shuffled
+diamond 3 shuffled
+spade 11 shuffled
+club 6 shuffled
+spade 12 shuffled
+club 10 shuffled
+club 3 shuffled
+club 4 shuffled
+diamond 12 shuffled
+heart 3 shuffled
+club 7 shuffled
+spade 13 shuffled
+heart 11 shuffled
+club 11 shuffled
+diamond 13 shuffled
+spade 2 shuffled
+heart 1 shuffled
+spade 4 shuffled
+spade 9 shuffled
+heart 9 shuffled
+spade 6 shuffled
+club 12 shuffled
+heart 12 shuffled
+heart 2 shuffled
+heart 4 shuffled
+heart 10 shuffled
+club 2 shuffled
+diamond 5 shuffled
+spade 5 shuffled
+diamond 1 shuffled
+heart 7 shuffled
+club 9 shuffled
+heart 8 shuffled
+heart 5 shuffled
+club 1 shuffled
+spade 1 shuffled
+diamond 2 shuffled
+club 13 shuffled
+club 8 shuffled
+club 5 shuffled
+spade 8 shuffled
+spade 10 shuffled
+diamond 9 shuffled
+heart 13 shuffled
+heart 6 shuffled
+diamond 11 shuffled
+spade 3 shuffled
+spade 7 shuffled
+diamond 7 shuffled
+diamond 10 shuffled
+
+
+Type 'C' and enter to return to menu... c
+
+[H[2JMain Menu
+
+1) Shuffle Deck
+2) Print Unshuffled Deck on Screen
+3) Show Players + ID #'s
+4) Deal the deck
+5) Save the shuffled Deck in a File
+6) Quit
+
+Enter 1-6: 5
+
+Name of file to save to : 
+shuffleddeck
+
+
+Type 'C' and enter to return to menu... c
+
+[H[2JMain Menu
+
+1) Shuffle Deck
+2) Print Unshuffled Deck on Screen
+3) Show Players + ID #'s
+4) Deal the deck
+5) Save the shuffled Deck in a File
+6) Quit
+
+Enter 1-6: 6
+
+]0;luis@luis-VirtualBox: ~/Projects/week2luis@luis-VirtualBox:~/Projects/week2$ exit
+exit
+
+Script done on Wed 05 Feb 2014 09:21:36 PM PST

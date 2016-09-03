@@ -1,0 +1,494 @@
+// include files
+#include <iostream>
+#include <cstdlib>
+#include <fstream>
+
+using namespace std;
+   
+// global constants
+const int suits = 4;
+const int rank = 13;
+const int stringSize = 50;
+const int cards = 52;
+
+// structs 
+struct card
+   {
+    char suit [10]; // default "suit"
+    int rank; // default "0"
+    char location [25]; // default "location"
+   };
+   
+struct player 
+   {
+    char name[30];
+    int ID;
+    card hand[5];
+   };
+
+// function prototypes
+int showMenu ();
+void getFile (card unshuffled[]);
+void getNames (player plyr[]);
+void shuffleDeck (card unshuffled [], card shuffled []);
+void dealDeck (card shuffled[],card stock[],card discard[], player plyr[]);
+void showDeck (card unshuffled []);
+void showPlayers (player plyr[]);
+void saveToFile (card shuffled []);
+void strcpy (char destination[], const char source[]);
+void strcat (char firstString[], char secondString[]);
+
+// main program
+int main()
+   {
+      // variables
+      card unshuffled[52];
+      card shuffled[52];
+      card stock[52];
+      card discard[52];
+      
+      player plyr[4];
+
+      bool quit = false;
+      int command;
+      char holdscreen;
+      int ndx = 0;
+      
+      // defaulting
+      while (ndx < 52)
+       {
+         strcpy (unshuffled[ndx].suit, "suit");
+         unshuffled[ndx].rank = 0;
+         strcpy (unshuffled[ndx].location, "location");
+         
+         strcpy (shuffled[ndx].suit, "suit");
+         shuffled[ndx].rank = 0;
+         strcpy (shuffled[ndx].location, "location");
+         
+         strcpy (stock[ndx].suit, "suit");
+         stock[ndx].rank = 0;
+         strcpy (stock[ndx].location, "location");
+         
+         strcpy (discard[ndx].suit, "suit");
+         discard[ndx].rank = 0;
+         strcpy (discard[ndx].location, "location");
+
+         ndx++;
+       }
+       
+      ndx = 0; 
+      while (ndx < 4)
+       {
+         strcpy (plyr[ndx].name, "name");
+         plyr[ndx].ID = 0;
+         ndx++;
+       }
+       
+      // random seeding
+      srand (time(NULL));
+
+      // ask for files for deck and players
+         // function : getFile
+         getFile(unshuffled);
+         
+         // function : getNames
+         getNames(plyr);
+         
+  // main game loop          
+  do 
+    {
+         // show menu 
+         // function : showMenu
+         command = showMenu();
+
+         // check user command
+         if (command == 1)
+            {
+		         // shuffle the cards
+		         // function : shuffleDeck
+               shuffleDeck (unshuffled, shuffled);
+            }
+         else if (command == 2)
+            {
+		          // print the unshuffled array
+		          // function : showDeck
+                showDeck(unshuffled);
+            }
+         else if (command == 3)
+            {
+               // show players
+               // function : showPlayers
+               showPlayers(plyr);
+            }
+         else if (command == 4)
+            {
+               // deal deck
+               dealDeck (shuffled, stock, discard, plyr);
+            }
+         else if (command == 5)
+            {
+		       // write the shuffled deck to the file  
+		         // function : saveToFile   
+               saveToFile (shuffled);
+  
+            }  
+         else if (command == 6)
+            {
+              // set quit to true
+              quit = true;
+            }
+         else 
+            {
+              // error message and hold for user
+              cout << endl;
+              cout << "Incorrect Input, please hit any key to go back to menu again..." << endl;
+              cin >> holdscreen;
+            }
+    } 
+
+  while (quit == false);     
+
+   return 0;
+   }
+
+// function implementations
+int showMenu ()
+{
+    int input = 0;
+    cout << "Main Menu" << endl << endl;
+    cout << "1) Shuffle Deck" << endl;
+    cout << "2) Print Unshuffled Deck on Screen" << endl;
+    cout << "3) Show Players + ID #'s" << endl;
+    cout << "4) Deal the deck" << endl;
+    cout << "5) Save the shuffled Deck in a File" << endl;
+    cout << "6) Quit" << endl << endl;
+
+    cout << "Enter 1-6: ";
+    cin >> input;
+    cout << endl;
+
+    return input; 
+}
+void getFile (card unshuffled[])
+{
+      char filename [10];
+      ifstream fin;
+      int ndx = 0;
+
+   // get file name
+   cout << "Enter deck file name: "; 
+   cin >> filename;
+   cout << endl;
+   
+   // open file
+   fin.clear();
+   fin.open(filename);
+   
+   // prime loop
+   ndx = 0;
+   fin >> unshuffled[ndx].suit;
+   fin >> unshuffled[ndx].rank;
+   ndx ++;
+   
+   // read in all values
+   while (ndx < 52)
+      {
+         fin >> unshuffled[ndx].suit >> unshuffled[ndx].rank;
+         strcpy (unshuffled[ndx].location, "unshuffled");
+         ndx ++;
+      }
+   
+   // close file
+   fin.close();
+   
+   // show
+   ndx = 0;
+   while (ndx < 52)
+      {
+         cout << unshuffled[ndx].suit << " "<< unshuffled[ndx].rank << endl;
+         ndx ++;
+      }
+   cout << endl;
+}
+void getNames (player plyr[])
+{
+   char filename[10];
+   ifstream fin;
+   int ndx = 0;
+   
+   // ask for file
+   cout << "Enter player name file: ";
+   cin >> filename;
+   cout << endl;
+   
+   // open file
+   fin.clear();
+   fin.open(filename);
+   
+   // prime loop
+   fin >> plyr[ndx].name;
+   fin >> plyr[ndx].ID;
+   ndx ++;
+   
+   // read in all names and IDs
+   while (ndx < 4)
+      {
+         fin >> plyr[ndx].name;
+         fin >> plyr[ndx].ID;
+         ndx++;
+      }
+   
+   // close
+   fin.close();
+   
+   // show players
+   ndx = 0;
+    while (ndx < 4)
+      {
+         cout << plyr[ndx].name << " ";
+         cout << plyr[ndx].ID << endl;
+         ndx ++;
+      }
+   cout << endl;
+}
+void shuffleDeck (card unshuffled [], card shuffled [])
+{
+    // variables
+    int counterNdx = 0;
+    int randomNum;
+    char temp;
+    char checker [52];
+
+    // clear checker index
+    while (counterNdx < 52)
+       {
+        checker[counterNdx] = 'X';
+        counterNdx ++;
+       }
+   
+    // get random int, check the checker array, if good
+      // use that spot in shuffled array, if not skip and repeat
+    counterNdx = 0;
+    while (counterNdx < 52)
+      {
+        randomNum = rand() % 52;
+
+        if (checker[randomNum] == 'X')
+           {  
+              strcpy (shuffled[randomNum].suit, unshuffled[counterNdx].suit);
+              shuffled[randomNum].rank = unshuffled[counterNdx].rank;
+              strcpy (shuffled[randomNum].location, "shuffled");              
+              
+	           checker [randomNum] = 'U';
+	           
+              counterNdx++;
+           }
+       }	
+       
+    // showing shuffled deck
+    int tester = 0;
+    while (tester < 52)
+      {
+	     cout << shuffled[tester].suit << " " << shuffled[tester].rank << " " << shuffled[tester].location << endl;
+        tester ++;
+      }
+
+   // end prompt
+   cout << endl;
+   cout << endl;
+   cout << "Type 'C' and enter to return to menu... ";
+   cin >> temp;
+   cout << endl;
+
+   system ( "clear" );
+
+}
+void dealDeck (card shuffled[],card stock[],card discard[], player plyr[])
+{
+      // variables
+      int cardNdx = 0, playerNdx = 0, handNdx = 0, stockNdx = 0;
+      char temp;
+      
+      // handing cards
+      while (cardNdx < 20)
+        {
+         playerNdx = 0;
+         while (playerNdx < 4)
+           {
+            strcpy (plyr[playerNdx].hand[handNdx].suit, shuffled[cardNdx].suit);
+            plyr[playerNdx].hand[handNdx].rank = shuffled[cardNdx].rank;
+            strcpy (plyr[playerNdx].hand[handNdx].location, plyr[playerNdx].name);
+         
+            playerNdx++;
+            cardNdx++;
+           }
+         handNdx++;
+        }
+        
+      // add "top" card to the discard pile
+      strcpy (discard[0].suit, shuffled[cardNdx].suit);
+      discard[0].rank = shuffled[cardNdx].rank;
+      strcpy (discard[0].location, "discard");  
+        
+      // make the stock pile with the rest of the cards  
+      while (cardNdx < 52)
+        {
+         strcpy (stock[stockNdx].suit, shuffled[cardNdx].suit);
+         stock[stockNdx].rank = shuffled[cardNdx].rank;
+         strcpy (stock[stockNdx].location, "stock");
+         
+         stockNdx++;
+         cardNdx++; 
+        }
+      
+      // showing player's hands 
+      cardNdx = 0, playerNdx = 0, handNdx = 0;
+      while (cardNdx < 20)
+        {
+         playerNdx = 0;
+         while (playerNdx < 4)
+           {
+            cout << plyr[playerNdx].hand[handNdx].suit << " ";
+            cout << plyr[playerNdx].hand[handNdx].rank << " ";
+            cout << plyr[playerNdx].hand[handNdx].location << endl;
+         
+            playerNdx++;
+            cardNdx++;
+           }
+         handNdx++;
+        }
+      
+      // showing discard
+      cout << endl << "Discard" << endl;
+      cout << discard[0].suit<< " " << discard[0].rank<< " " << discard[0].location << endl;
+      
+      //showing stock cards
+      cout << endl << "Stock" << endl;  
+      stockNdx=0;
+      while (cardNdx < 52)
+        {
+         cout << stock[stockNdx].suit << " ";
+         cout << stock[stockNdx].rank << " ";
+         cout << stock[stockNdx].location << endl;
+         
+         stockNdx++;
+         cardNdx++; 
+        }
+        
+   // end screen     
+   cout << endl;
+   cout << endl;
+   cout << "Type 'C' and enter to return to menu... ";
+   cin >> temp;
+   cout << endl;
+
+   system ( "clear" );
+}
+void showDeck (card unshuffled [])
+{
+   int ndx;
+   char temp;
+   
+   for (ndx = 0; ndx < 52; ndx++)
+      {
+         cout << unshuffled[ndx].suit << " " << unshuffled[ndx].rank << " " << endl;
+      }
+
+   cout << endl;
+   cout << endl;
+   cout << "Type 'C' and enter to return to menu... ";
+   cin >> temp;
+   cout << endl;
+
+   system ( "clear" );
+
+}
+void showPlayers (player plyr[])
+{
+ int ndx = 0;
+ char temp;
+ 
+ for (ndx = 0; ndx < 4; ndx++)
+   {
+      cout << plyr[ndx].name << " " << plyr[ndx].ID << endl;
+   }
+   
+   cout << endl;
+   cout << endl;
+   cout << "Type 'C' and enter to return to menu... ";
+   cin >> temp;
+   cout << endl;
+
+   system ( "clear" );
+}
+void saveToFile (card shuffled [])
+{
+    // variables
+    char temp;
+    char fileName [50];
+    ofstream fout;
+    int ndx = 0;
+  
+    // ask for name
+    cout << "Name of file to save to : " << endl;
+    cin >> fileName;
+   
+    fout.open (fileName);
+    
+    while (ndx < 52)
+       {
+        fout << shuffled[ndx].suit << " " << shuffled[ndx].rank << endl;
+        ndx++;
+       } 
+  
+    fout.close();
+
+   cout << endl;
+   cout << endl;
+   cout << "Type 'C' and enter to return to menu... ";
+   cin >> temp;
+   cout << endl;
+
+   system ( "clear" );
+}
+void strcpy (char destination[], const char source[])
+{
+	// variables
+        int ndx = 0;
+
+	// copy
+	while (source[ndx] != '\0')
+	   {
+            destination[ndx] = source[ndx];
+            ndx++;
+	   }
+
+    // add null
+    destination[ndx] = '\0';
+}
+void strcat (char firstString[], char secondString[])
+{
+	// variables
+    int ndxOne = 0;
+    int ndxTwo = 0;
+
+    // find spot to start
+    while (firstString[ndxOne] != '\0')
+       {
+	      ndxOne++;
+	   }
+
+    firstString[ndxOne] = ' ';
+    ndxOne ++;
+
+	// copy
+	while (secondString[ndxTwo] != '\0')
+	   {
+          firstString[ndxOne] = secondString[ndxTwo];
+          ndxOne++;
+          ndxTwo++;
+	   }
+
+    // add null
+    firstString[ndxOne] = '\0';
+}

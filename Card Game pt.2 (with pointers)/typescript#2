@@ -1,0 +1,247 @@
+Script started on Wed 12 Feb 2014 11:09:28 PM PST
+]0;luis@luis-VirtualBox: ~/projects/week3luis@luis-VirtualBox:~/projects/week3$ g++ shuffler3.cpp
+]0;luis@luis-VirtualBox: ~/projects/week3luis@luis-VirtualBox:~/projects/week3$ ./a.out
+Enter deck file name: deck
+
+Enter player name file: names
+
+Main Menu
+
+1) Shuffle Deck
+2) Print Unshuffled Deck on Screen
+3) Print Shuffled Deck on Screen
+4) Show Players + ID #'s
+5) Quit
+
+Enter 1-5: 3
+
+suit 0 location
+suit 0 location
+suit 0 location
+suit 0 location
+suit 0 location
+suit 0 location
+suit 0 location
+suit 0 location
+suit 0 location
+suit 0 location
+suit 0 location
+suit 0 location
+suit 0 location
+suit 0 location
+suit 0 location
+suit 0 location
+suit 0 location
+suit 0 location
+suit 0 location
+suit 0 location
+suit 0 location
+suit 0 location
+suit 0 location
+suit 0 location
+suit 0 location
+suit 0 location
+suit 0 location
+suit 0 location
+suit 0 location
+suit 0 location
+suit 0 location
+suit 0 location
+suit 0 location
+suit 0 location
+suit 0 location
+suit 0 location
+suit 0 location
+suit 0 location
+suit 0 location
+suit 0 location
+suit 0 location
+suit 0 location
+suit 0 location
+suit 0 location
+suit 0 location
+suit 0 location
+suit 0 location
+suit 0 location
+suit 0 location
+suit 0 location
+suit 0 location
+suit 0 location
+
+
+Type 'C' and enter to return to menu... c
+
+[H[2JMain Menu
+
+1) Shuffle Deck
+2) Print Unshuffled Deck on Screen
+3) Print Shuffled Deck on Screen
+4) Show Players + ID #'s
+5) Quit
+
+Enter 1-5: 1
+
+
+
+Type 'C' and enter to return to menu... c
+
+[H[2JMain Menu
+
+1) Shuffle Deck
+2) Print Unshuffled Deck on Screen
+3) Print Shuffled Deck on Screen
+4) Show Players + ID #'s
+5) Quit
+
+Enter 1-5: 3
+
+club 1 Shuffled
+spade 5 Shuffled
+diamond 1 Shuffled
+diamond 11 Shuffled
+club 5 Shuffled
+club 12 Shuffled
+club 9 Shuffled
+club 11 Shuffled
+club 10 Shuffled
+spade 13 Shuffled
+spade 10 Shuffled
+diamond 9 Shuffled
+heart 1 Shuffled
+club 3 Shuffled
+heart 5 Shuffled
+spade 8 Shuffled
+spade 3 Shuffled
+spade 12 Shuffled
+heart 11 Shuffled
+heart 2 Shuffled
+heart 13 Shuffled
+heart 12 Shuffled
+diamond 6 Shuffled
+club 7 Shuffled
+spade 2 Shuffled
+club 6 Shuffled
+club 2 Shuffled
+diamond 3 Shuffled
+spade 1 Shuffled
+diamond 8 Shuffled
+heart 6 Shuffled
+heart 10 Shuffled
+club 13 Shuffled
+heart 9 Shuffled
+diamond 2 Shuffled
+heart 4 Shuffled
+diamond 13 Shuffled
+heart 8 Shuffled
+spade 11 Shuffled
+diamond 4 Shuffled
+diamond 12 Shuffled
+spade 4 Shuffled
+heart 3 Shuffled
+spade 9 Shuffled
+diamond 5 Shuffled
+club 4 Shuffled
+diamond 7 Shuffled
+club 8 Shuffled
+spade 6 Shuffled
+diamond 10 Shuffled
+spade 7 Shuffled
+heart 7 Shuffled
+
+
+Type 'C' and enter to return to menu... c
+
+[H[2JMain Menu
+
+1) Shuffle Deck
+2) Print Unshuffled Deck on Screen
+3) Print Shuffled Deck on Screen
+4) Show Players + ID #'s
+5) Quit
+
+Enter 1-5: 1
+
+
+
+Type 'C' and enter to return to menu... c
+
+[H[2JMain Menu
+
+1) Shuffle Deck
+2) Print Unshuffled Deck on Screen
+3) Print Shuffled Deck on Screen
+4) Show Players + ID #'s
+5) Quit
+
+Enter 1-5: 3
+
+diamond 1 Shuffled
+diamond 12 Shuffled
+spade 1 Shuffled
+spade 5 Shuffled
+diamond 2 Shuffled
+heart 1 Shuffled
+heart 5 Shuffled
+spade 8 Shuffled
+club 11 Shuffled
+club 4 Shuffled
+diamond 5 Shuffled
+spade 9 Shuffled
+club 8 Shuffled
+heart 12 Shuffled
+heart 9 Shuffled
+club 6 Shuffled
+spade 12 Shuffled
+club 12 Shuffled
+diamond 7 Shuffled
+heart 3 Shuffled
+spade 3 Shuffled
+spade 13 Shuffled
+heart 10 Shuffled
+diamond 13 Shuffled
+spade 7 Shuffled
+spade 11 Shuffled
+diamond 10 Shuffled
+spade 10 Shuffled
+heart 2 Shuffled
+club 3 Shuffled
+spade 2 Shuffled
+club 7 Shuffled
+club 5 Shuffled
+heart 4 Shuffled
+diamond 3 Shuffled
+diamond 8 Shuffled
+heart 7 Shuffled
+heart 13 Shuffled
+diamond 11 Shuffled
+spade 6 Shuffled
+spade 4 Shuffled
+diamond 4 Shuffled
+heart 11 Shuffled
+club 9 Shuffled
+club 10 Shuffled
+club 2 Shuffled
+heart 8 Shuffled
+club 13 Shuffled
+club 1 Shuffled
+diamond 9 Shuffled
+diamond 6 Shuffled
+heart 6 Shuffled
+
+
+Type 'C' and enter to return to menu... c
+
+[H[2JMain Menu
+
+1) Shuffle Deck
+2) Print Unshuffled Deck on Screen
+3) Print Shuffled Deck on Screen
+4) Show Players + ID #'s
+5) Quit
+
+Enter 1-5: 5
+
+]0;luis@luis-VirtualBox: ~/projects/week3luis@luis-VirtualBox:~/projects/week3$ ei[Kxit
+exit
+
+Script done on Wed 12 Feb 2014 11:10:16 PM PST

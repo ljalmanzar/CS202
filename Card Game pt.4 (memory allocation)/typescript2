@@ -1,0 +1,288 @@
+Script started on Tue 25 Feb 2014 11:56:02 PM PST
+]0;luis@luis-VirtualBox: ~/projects/week5luis@luis-VirtualBox:~/projects/week5$ make
+g++ shuffler5.o stringfuncs.o
+]0;luis@luis-VirtualBox: ~/projects/week5luis@luis-VirtualBox:~/projects/week5$ ./a.out
+[H[2JEnter deck file name: deck
+
+Enter player name file: names
+
+How many players (2-8) will be playing? 7
+
+
+
+
+
+
+
+[H[2JMain Menu
+
+1) Shuffle Deck
+2) Deal Cards
+3) Print Unshuffled Deck on Screen
+4) Print Shuffled Deck on Screen
+5) Show Players + ID #'s
+6) Quit
+
+7) Print the Stock Pile to the Screen
+8) Print the Discard Pile to the Screen
+
+Enter 1-6: 1
+
+******DONE******
+
+Type 'C' and enter to return to menu... c
+
+[H[2JMain Menu
+
+1) Shuffle Deck
+2) Deal Cards
+3) Print Unshuffled Deck on Screen
+4) Print Shuffled Deck on Screen
+5) Show Players + ID #'s
+6) Quit
+
+7) Print the Stock Pile to the Screen
+8) Print the Discard Pile to the Screen
+
+Enter 1-6: 2
+
+******DONE******
+
+Type 'C' and enter to return to menu... c
+
+[H[2JMain Menu
+
+1) Shuffle Deck
+2) Deal Cards
+3) Print Unshuffled Deck on Screen
+4) Print Shuffled Deck on Screen
+5) Show Players + ID #'s
+6) Quit
+
+7) Print the Stock Pile to the Screen
+8) Print the Discard Pile to the Screen
+
+Enter 1-6: e 3
+
+heart 1 Unshuffled
+heart 2 Unshuffled
+heart 3 Unshuffled
+heart 4 Unshuffled
+heart 5 Unshuffled
+heart 6 Unshuffled
+heart 7 Unshuffled
+heart 8 Unshuffled
+heart 9 Unshuffled
+heart 10 Unshuffled
+heart 11 Unshuffled
+heart 12 Unshuffled
+heart 13 Unshuffled
+diamond 1 Unshuffled
+diamond 2 Unshuffled
+diamond 3 Unshuffled
+diamond 4 Unshuffled
+diamond 5 Unshuffled
+diamond 6 Unshuffled
+diamond 7 Unshuffled
+diamond 8 Unshuffled
+diamond 9 Unshuffled
+diamond 10 Unshuffled
+diamond 11 Unshuffled
+diamond 12 Unshuffled
+diamond 13 Unshuffled
+spade 1 Unshuffled
+spade 2 Unshuffled
+spade 3 Unshuffled
+spade 4 Unshuffled
+spade 5 Unshuffled
+spade 6 Unshuffled
+spade 7 Unshuffled
+spade 8 Unshuffled
+spade 9 Unshuffled
+spade 10 Unshuffled
+spade 11 Unshuffled
+spade 12 Unshuffled
+spade 13 Unshuffled
+club 1 Unshuffled
+club 2 Unshuffled
+club 3 Unshuffled
+club 4 Unshuffled
+club 5 Unshuffled
+club 6 Unshuffled
+club 7 Unshuffled
+club 8 Unshuffled
+club 9 Unshuffled
+club 10 Unshuffled
+club 11 Unshuffled
+club 12 Unshuffled
+club 13 Unshuffled
+
+
+Type 'C' and enter to return to menu... c
+
+[H[2JMain Menu
+
+1) Shuffle Deck
+2) Deal Cards
+3) Print Unshuffled Deck on Screen
+4) Print Shuffled Deck on Screen
+5) Show Players + ID #'s
+6) Quit
+
+7) Print the Stock Pile to the Screen
+8) Print the Discard Pile to the Screen
+
+Enter 1-6: 4
+
+diamond 6 Shuffled
+spade 1 Shuffled
+spade 2 Shuffled
+club 10 Shuffled
+spade 12 Shuffled
+spade 3 Shuffled
+spade 9 Shuffled
+heart 12 Shuffled
+spade 11 Shuffled
+diamond 2 Shuffled
+club 1 Shuffled
+club 9 Shuffled
+club 8 Shuffled
+heart 5 Shuffled
+club 2 Shuffled
+diamond 12 Shuffled
+spade 10 Shuffled
+heart 1 Shuffled
+club 11 Shuffled
+club 13 Shuffled
+club 7 Shuffled
+heart 11 Shuffled
+heart 13 Shuffled
+diamond 10 Shuffled
+diamond 7 Shuffled
+diamond 1 Shuffled
+heart 3 Shuffled
+club 12 Shuffled
+diamond 11 Shuffled
+heart 10 Shuffled
+club 5 Shuffled
+spade 4 Shuffled
+heart 7 Shuffled
+diamond 4 Shuffled
+club 3 Shuffled
+heart 8 Shuffled
+spade 7 Shuffled
+club 6 Shuffled
+diamond 3 Shuffled
+spade 5 Shuffled
+diamond 8 Shuffled
+heart 9 Shuffled
+club 4 Shuffled
+spade 13 Shuffled
+spade 8 Shuffled
+heart 2 Shuffled
+diamond 9 Shuffled
+diamond 13 Shuffled
+heart 4 Shuffled
+spade 6 Shuffled
+diamond 5 Shuffled
+heart 6 Shuffled
+
+
+Type 'C' and enter to return to menu... c
+
+[H[2JMain Menu
+
+1) Shuffle Deck
+2) Deal Cards
+3) Print Unshuffled Deck on Screen
+4) Print Shuffled Deck on Screen
+5) Show Players + ID #'s
+6) Quit
+
+7) Print the Stock Pile to the Screen
+8) Print the Discard Pile to the Screen
+
+Enter 1-6: 5
+
+Lebron 79326
+Carlan 31769
+LaLa 15196
+Anthony 85411
+Alaina 52581
+Lenny 48162
+Trey 62397
+
+
+Type 'C' and enter to return to menu... c
+
+[H[2JMain Menu
+
+1) Shuffle Deck
+2) Deal Cards
+3) Print Unshuffled Deck on Screen
+4) Print Shuffled Deck on Screen
+5) Show Players + ID #'s
+6) Quit
+
+7) Print the Stock Pile to the Screen
+8) Print the Discard Pile to the Screen
+
+Enter 1-6: 7
+
+diamond 6 Stock
+spade 1 Stock
+spade 2 Stock
+club 10 Stock
+spade 12 Stock
+spade 3 Stock
+spade 9 Stock
+heart 12 Stock
+spade 11 Stock
+diamond 2 Stock
+club 1 Stock
+club 9 Stock
+club 8 Stock
+heart 5 Stock
+club 2 Stock
+diamond 12 Stock
+
+
+Type 'C' and enter to return to menu... c
+
+[H[2JMain Menu
+
+1) Shuffle Deck
+2) Deal Cards
+3) Print Unshuffled Deck on Screen
+4) Print Shuffled Deck on Screen
+5) Show Players + ID #'s
+6) Quit
+
+7) Print the Stock Pile to the Screen
+8) Print the Discard Pile to the Screen
+
+Enter 1-6: 8
+
+spade 10 Discard
+
+
+Type 'C' and enter to return to menu... c
+
+[H[2JMain Menu
+
+1) Shuffle Deck
+2) Deal Cards
+3) Print Unshuffled Deck on Screen
+4) Print Shuffled Deck on Screen
+5) Show Players + ID #'s
+6) Quit
+
+7) Print the Stock Pile to the Screen
+8) Print the Discard Pile to the Screen
+
+Enter 1-6: 6
+
+]0;luis@luis-VirtualBox: ~/projects/week5luis@luis-VirtualBox:~/projects/week5$ exit
+exit
+
+Script done on Tue 25 Feb 2014 11:57:01 PM PST

@@ -1,0 +1,8 @@
+main: classes-Main.o classes.o
+	g++ classes-Main.o classes.o
+classes-Main.o: classes-Main.cpp 
+	g++ -c classes-Main.cpp
+classes.o: classes.cpp classes.h
+	g++ -c classes.cpp
+clean:
+	rm classes.o classes-Main.o

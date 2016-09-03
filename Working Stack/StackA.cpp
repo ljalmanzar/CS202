@@ -1,0 +1,152 @@
+#include <iostream>
+#include <cstdlib>
+#include <string>
+
+#include "Stack.h"
+
+using namespace std;
+
+template <typename T>
+Stack<T>::Stack(int i)
+{
+	max = i;
+	top = 0;
+	actual = 0;
+	data = new T [max];
+}
+
+template <typename T>
+Stack<T>::Stack(const Stack& s)
+{
+	max = s.max;
+	top = s.top;
+	actual = s.actual;
+	
+	data = new T [max];
+	
+	for (int ndx=0; ndx<actual; ndx++)
+		{
+			data[ndx] = s.data[ndx];
+		}
+}
+
+template <typename T>
+Stack<T>::~Stack()
+{
+	delete[] data;
+	data = NULL;
+}
+
+template <typename T>
+Stack<T>& Stack<T>::operator=(const Stack& s)
+{
+	max = s.max;
+	top = s.top;
+	actual = s.actual;
+	
+	delete[] data;
+	data = new T [max];
+	
+	for (int ndx=0; ndx<actual; ndx++)
+		{
+			data[ndx] = s.data[ndx];
+		}
+}
+
+template <typename T>
+bool Stack<T>::push(T s)
+{
+	int ndx;
+	ndx = actual;
+	
+	if (actual == max)
+		{
+			return false;
+		}
+	
+	while (ndx>0)
+		{
+			data[ndx] = data[ndx-1];
+			ndx--;
+		}
+		
+	data[ndx] = s;
+	
+	actual++;
+	
+	return true;
+}
+
+template <typename T>
+bool Stack<T>::pop(T& s)
+{
+	int ndx= 0;
+	
+	if (actual == 0)
+		{
+			return false;
+		}
+	else if (actual == 1)
+		{
+			s = data[actual-1];
+			actual--;
+			return true;
+		}
+	else
+		{
+			s = data[top];
+			
+			while (ndx<(actual-1))
+				{
+					data[ndx] = data[ndx+1];
+					ndx++;
+				}
+				
+			actual--;
+			return true;
+		}
+}
+
+template <typename T>
+bool Stack<T>::empty() const
+{
+	if (actual == 0)
+		{
+			return true;
+		}
+	else
+		{
+			return false;
+		}
+	
+}
+
+template <typename T>
+bool Stack<T>::full() const
+{
+	if (actual == max)
+		{
+			return true;
+		}
+	else
+		{
+			return false;
+		}
+}
+
+template <typename T>
+bool Stack<T>::clear()
+{
+	actual = 0;
+	
+	return true;
+}
+
+template <typename T>
+void Stack<T>::print () const
+{
+	for (int ndx = 0; ndx < actual; ndx++)
+		{
+			cout << data[ndx] << " ";
+		}
+}

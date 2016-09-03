@@ -1,0 +1,621 @@
+Script started on Wed 05 Feb 2014 09:23:51 PM PST
+]0;luis@luis-VirtualBox: ~/Projects/week2luis@luis-VirtualBox:~/Projects/week2$ g++ shufl[Kfler2.cpp
+]0;luis@luis-VirtualBox: ~/Projects/week2luis@luis-VirtualBox:~/Projects/week2$ ./a.out
+Enter deck file name: deck
+
+heart 1
+heart 2
+heart 3
+heart 4
+heart 5
+heart 6
+heart 7
+heart 8
+heart 9
+heart 10
+heart 11
+heart 12
+heart 13
+diamond 1
+diamond 2
+diamond 3
+diamond 4
+diamond 5
+diamond 6
+diamond 7
+diamond 8
+diamond 9
+diamond 10
+diamond 11
+diamond 12
+diamond 13
+spade 1
+spade 2
+spade 3
+spade 4
+spade 5
+spade 6
+spade 7
+spade 8
+spade 9
+spade 10
+spade 11
+spade 12
+spade 13
+club 1
+club 2
+club 3
+club 4
+club 5
+club 6
+club 7
+club 8
+club 9
+club 10
+club 11
+club 12
+club 13
+
+Enter player name file: names
+
+Carlan 31769
+LaLa 15196
+Anthony 85411
+Alaina 52581
+
+Main Menu
+
+1) Shuffle Deck
+2) Print Unshuffled Deck on Screen
+3) Show Players + ID #'s
+4) Deal the deck
+5) Save the shuffled Deck in a File
+6) Quit
+
+Enter 1-6: 1
+
+heart 6 shuffled
+club 8 shuffled
+diamond 9 shuffled
+heart 1 shuffled
+spade 13 shuffled
+diamond 5 shuffled
+diamond 6 shuffled
+spade 7 shuffled
+diamond 8 shuffled
+diamond 10 shuffled
+heart 2 shuffled
+spade 3 shuffled
+diamond 7 shuffled
+spade 1 shuffled
+club 9 shuffled
+spade 2 shuffled
+club 7 shuffled
+heart 7 shuffled
+spade 12 shuffled
+club 2 shuffled
+club 12 shuffled
+heart 13 shuffled
+heart 3 shuffled
+club 11 shuffled
+heart 10 shuffled
+diamond 2 shuffled
+club 1 shuffled
+club 6 shuffled
+diamond 11 shuffled
+spade 8 shuffled
+club 10 shuffled
+spade 5 shuffled
+heart 4 shuffled
+club 3 shuffled
+club 4 shuffled
+heart 12 shuffled
+club 5 shuffled
+diamond 12 shuffled
+heart 5 shuffled
+diamond 4 shuffled
+heart 9 shuffled
+spade 11 shuffled
+spade 10 shuffled
+spade 4 shuffled
+spade 9 shuffled
+spade 6 shuffled
+diamond 13 shuffled
+diamond 3 shuffled
+heart 8 shuffled
+diamond 1 shuffled
+club 13 shuffled
+heart 11 shuffled
+
+
+Type 'C' and enter to return to menu... c
+
+[H[2JMain Menu
+
+1) Shuffle Deck
+2) Print Unshuffled Deck on Screen
+3) Show Players + ID #'s
+4) Deal the deck
+5) Save the shuffled Deck in a File
+6) Quit
+
+Enter 1-6: 1
+
+heart 2 shuffled
+spade 8 shuffled
+club 3 shuffled
+spade 7 shuffled
+spade 1 shuffled
+club 9 shuffled
+spade 10 shuffled
+club 13 shuffled
+diamond 8 shuffled
+heart 12 shuffled
+club 4 shuffled
+diamond 3 shuffled
+club 1 shuffled
+club 5 shuffled
+spade 13 shuffled
+spade 6 shuffled
+diamond 7 shuffled
+spade 11 shuffled
+heart 9 shuffled
+spade 2 shuffled
+club 8 shuffled
+club 10 shuffled
+spade 4 shuffled
+diamond 9 shuffled
+diamond 2 shuffled
+heart 1 shuffled
+diamond 12 shuffled
+spade 5 shuffled
+club 7 shuffled
+diamond 4 shuffled
+diamond 1 shuffled
+heart 10 shuffled
+heart 13 shuffled
+heart 7 shuffled
+diamond 13 shuffled
+club 2 shuffled
+heart 3 shuffled
+club 11 shuffled
+diamond 10 shuffled
+diamond 5 shuffled
+club 12 shuffled
+heart 8 shuffled
+club 6 shuffled
+heart 5 shuffled
+heart 6 shuffled
+diamond 6 shuffled
+spade 9 shuffled
+diamond 11 shuffled
+heart 11 shuffled
+spade 12 shuffled
+spade 3 shuffled
+heart 4 shuffled
+
+
+Type 'C' and enter to return to menu... c
+
+[H[2JMain Menu
+
+1) Shuffle Deck
+2) Print Unshuffled Deck on Screen
+3) Show Players + ID #'s
+4) Deal the deck
+5) Save the shuffled Deck in a File
+6) Quit
+
+Enter 1-6: 1
+
+spade 5 shuffled
+club 4 shuffled
+diamond 11 shuffled
+spade 6 shuffled
+heart 11 shuffled
+club 8 shuffled
+club 12 shuffled
+heart 9 shuffled
+spade 9 shuffled
+diamond 13 shuffled
+diamond 10 shuffled
+diamond 3 shuffled
+spade 10 shuffled
+heart 7 shuffled
+club 10 shuffled
+spade 8 shuffled
+heart 12 shuffled
+diamond 5 shuffled
+spade 13 shuffled
+club 1 shuffled
+heart 5 shuffled
+spade 3 shuffled
+club 13 shuffled
+diamond 8 shuffled
+club 5 shuffled
+club 3 shuffled
+diamond 6 shuffled
+club 2 shuffled
+diamond 7 shuffled
+heart 2 shuffled
+spade 4 shuffled
+heart 3 shuffled
+spade 12 shuffled
+heart 4 shuffled
+diamond 1 shuffled
+club 6 shuffled
+heart 10 shuffled
+club 11 shuffled
+spade 2 shuffled
+heart 13 shuffled
+club 7 shuffled
+diamond 9 shuffled
+heart 6 shuffled
+spade 7 shuffled
+spade 11 shuffled
+diamond 2 shuffled
+heart 1 shuffled
+club 9 shuffled
+diamond 12 shuffled
+diamond 4 shuffled
+spade 1 shuffled
+heart 8 shuffled
+
+
+Type 'C' and enter to return to menu... c
+
+[H[2JMain Menu
+
+1) Shuffle Deck
+2) Print Unshuffled Deck on Screen
+3) Show Players + ID #'s
+4) Deal the deck
+5) Save the shuffled Deck in a File
+6) Quit
+
+Enter 1-6: 1
+
+heart 13 shuffled
+heart 12 shuffled
+spade 7 shuffled
+spade 9 shuffled
+club 7 shuffled
+heart 5 shuffled
+spade 1 shuffled
+club 4 shuffled
+diamond 1 shuffled
+heart 6 shuffled
+diamond 8 shuffled
+heart 11 shuffled
+club 6 shuffled
+club 11 shuffled
+club 12 shuffled
+heart 4 shuffled
+diamond 6 shuffled
+spade 5 shuffled
+club 2 shuffled
+spade 6 shuffled
+heart 3 shuffled
+club 3 shuffled
+heart 8 shuffled
+club 13 shuffled
+diamond 9 shuffled
+club 9 shuffled
+heart 9 shuffled
+diamond 10 shuffled
+club 1 shuffled
+club 8 shuffled
+heart 2 shuffled
+spade 10 shuffled
+diamond 13 shuffled
+heart 10 shuffled
+spade 2 shuffled
+diamond 7 shuffled
+diamond 4 shuffled
+diamond 3 shuffled
+spade 11 shuffled
+spade 8 shuffled
+spade 3 shuffled
+diamond 5 shuffled
+spade 4 shuffled
+heart 7 shuffled
+club 10 shuffled
+spade 13 shuffled
+diamond 2 shuffled
+diamond 12 shuffled
+diamond 11 shuffled
+spade 12 shuffled
+club 5 shuffled
+heart 1 shuffled
+
+
+Type 'C' and enter to return to menu... c
+
+[H[2JMain Menu
+
+1) Shuffle Deck
+2) Print Unshuffled Deck on Screen
+3) Show Players + ID #'s
+4) Deal the deck
+5) Save the shuffled Deck in a File
+6) Quit
+
+Enter 1-6: 1
+
+heart 6 shuffled
+club 12 shuffled
+diamond 12 shuffled
+diamond 2 shuffled
+club 11 shuffled
+heart 7 shuffled
+club 9 shuffled
+heart 4 shuffled
+diamond 13 shuffled
+spade 2 shuffled
+spade 8 shuffled
+club 5 shuffled
+club 10 shuffled
+diamond 6 shuffled
+heart 5 shuffled
+club 6 shuffled
+club 1 shuffled
+heart 3 shuffled
+diamond 4 shuffled
+heart 9 shuffled
+spade 6 shuffled
+heart 8 shuffled
+diamond 5 shuffled
+diamond 3 shuffled
+spade 4 shuffled
+heart 12 shuffled
+spade 1 shuffled
+club 7 shuffled
+diamond 11 shuffled
+spade 12 shuffled
+heart 1 shuffled
+spade 10 shuffled
+diamond 8 shuffled
+diamond 9 shuffled
+spade 11 shuffled
+club 8 shuffled
+club 2 shuffled
+spade 9 shuffled
+diamond 7 shuffled
+diamond 1 shuffled
+heart 2 shuffled
+club 4 shuffled
+club 3 shuffled
+diamond 10 shuffled
+club 13 shuffled
+heart 13 shuffled
+spade 13 shuffled
+spade 3 shuffled
+heart 11 shuffled
+heart 10 shuffled
+spade 5 shuffled
+spade 7 shuffled
+
+
+Type 'C' and enter to return to menu... c
+
+[H[2JMain Menu
+
+1) Shuffle Deck
+2) Print Unshuffled Deck on Screen
+3) Show Players + ID #'s
+4) Deal the deck
+5) Save the shuffled Deck in a File
+6) Quit
+
+Enter 1-6: 1
+
+spade 4 shuffled
+spade 7 shuffled
+diamond 13 shuffled
+heart 10 shuffled
+diamond 7 shuffled
+heart 4 shuffled
+spade 9 shuffled
+spade 6 shuffled
+spade 1 shuffled
+heart 1 shuffled
+club 8 shuffled
+heart 13 shuffled
+club 3 shuffled
+diamond 3 shuffled
+diamond 12 shuffled
+heart 12 shuffled
+diamond 8 shuffled
+heart 5 shuffled
+diamond 1 shuffled
+spade 3 shuffled
+heart 7 shuffled
+heart 2 shuffled
+spade 12 shuffled
+club 2 shuffled
+club 6 shuffled
+club 5 shuffled
+spade 13 shuffled
+heart 6 shuffled
+club 10 shuffled
+club 1 shuffled
+spade 11 shuffled
+diamond 2 shuffled
+diamond 9 shuffled
+diamond 6 shuffled
+club 7 shuffled
+club 12 shuffled
+spade 2 shuffled
+diamond 4 shuffled
+diamond 10 shuffled
+diamond 11 shuffled
+heart 11 shuffled
+heart 9 shuffled
+club 9 shuffled
+heart 8 shuffled
+club 4 shuffled
+heart 3 shuffled
+diamond 5 shuffled
+spade 10 shuffled
+club 13 shuffled
+club 11 shuffled
+spade 8 shuffled
+spade 5 shuffled
+
+
+Type 'C' and enter to return to menu... c
+
+[H[2JMain Menu
+
+1) Shuffle Deck
+2) Print Unshuffled Deck on Screen
+3) Show Players + ID #'s
+4) Deal the deck
+5) Save the shuffled Deck in a File
+6) Quit
+
+Enter 1-6: 1
+
+club 11 shuffled
+diamond 9 shuffled
+spade 3 shuffled
+spade 8 shuffled
+club 4 shuffled
+spade 7 shuffled
+club 7 shuffled
+club 10 shuffled
+heart 10 shuffled
+club 1 shuffled
+club 5 shuffled
+diamond 5 shuffled
+diamond 3 shuffled
+spade 11 shuffled
+spade 10 shuffled
+heart 8 shuffled
+heart 6 shuffled
+heart 1 shuffled
+diamond 11 shuffled
+heart 7 shuffled
+diamond 6 shuffled
+spade 9 shuffled
+heart 4 shuffled
+diamond 4 shuffled
+club 12 shuffled
+diamond 10 shuffled
+heart 3 shuffled
+spade 13 shuffled
+club 8 shuffled
+spade 6 shuffled
+heart 2 shuffled
+diamond 1 shuffled
+diamond 12 shuffled
+spade 4 shuffled
+spade 12 shuffled
+club 3 shuffled
+heart 5 shuffled
+heart 12 shuffled
+heart 9 shuffled
+spade 5 shuffled
+spade 1 shuffled
+club 13 shuffled
+heart 13 shuffled
+club 9 shuffled
+spade 2 shuffled
+diamond 13 shuffled
+club 6 shuffled
+heart 11 shuffled
+club 2 shuffled
+diamond 7 shuffled
+diamond 8 shuffled
+diamond 2 shuffled
+
+
+Type 'C' and enter to return to menu... c
+
+[H[2JMain Menu
+
+1) Shuffle Deck
+2) Print Unshuffled Deck on Screen
+3) Show Players + ID #'s
+4) Deal the deck
+5) Save the shuffled Deck in a File
+6) Quit
+
+Enter 1-6: 4
+
+club 11 Carlan
+diamond 9 LaLa
+spade 3 Anthony
+spade 8 Alaina
+club 4 Carlan
+spade 7 LaLa
+club 7 Anthony
+club 10 Alaina
+heart 10 Carlan
+club 1 LaLa
+club 5 Anthony
+diamond 5 Alaina
+diamond 3 Carlan
+spade 11 LaLa
+spade 10 Anthony
+heart 8 Alaina
+heart 6 Carlan
+heart 1 LaLa
+diamond 11 Anthony
+heart 7 Alaina
+
+Discard
+diamond 6 discard
+
+Stock
+diamond 6 stock
+spade 9 stock
+heart 4 stock
+diamond 4 stock
+club 12 stock
+diamond 10 stock
+heart 3 stock
+spade 13 stock
+club 8 stock
+spade 6 stock
+heart 2 stock
+diamond 1 stock
+diamond 12 stock
+spade 4 stock
+spade 12 stock
+club 3 stock
+heart 5 stock
+heart 12 stock
+heart 9 stock
+spade 5 stock
+spade 1 stock
+club 13 stock
+heart 13 stock
+club 9 stock
+spade 2 stock
+diamond 13 stock
+club 6 stock
+heart 11 stock
+club 2 stock
+diamond 7 stock
+diamond 8 stock
+diamond 2 stock
+
+
+Type 'C' and enter to return to menu... c
+
+[H[2JMain Menu
+
+1) Shuffle Deck
+2) Print Unshuffled Deck on Screen
+3) Show Players + ID #'s
+4) Deal the deck
+5) Save the shuffled Deck in a File
+6) Quit
+
+Enter 1-6: 6
+
+]0;luis@luis-VirtualBox: ~/Projects/week2luis@luis-VirtualBox:~/Projects/week2$ exit
+exit
+
+Script done on Wed 05 Feb 2014 09:25:20 PM PST

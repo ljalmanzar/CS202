@@ -1,0 +1,83 @@
+// header files
+#include <iostream>
+#include <cstdlib>
+#include <fstream>
+
+using namespace std;
+
+// global constants
+
+// structs 
+struct card
+   {
+    char suit [10]; // default "suit"
+    int rank; // default "0"
+    char location [25]; // default "location"
+   };
+
+// function prototypes
+
+// main program
+int main ()
+{
+   char filename [10];
+   ifstream fin;
+   card unshuffled[52];
+   int ndx = 0;
+   
+   // defaulting
+/*   while (ndx < 52)
+      {
+         unshuffled[ndx].suit = "suit";
+         unshuffled[ndx].rank = 0;
+         unshuffled[ndx].location = "location";
+         ndx++;
+      }
+      
+      ndx = 0;
+         while (ndx < 52)
+      {
+         cout << unshuffled[ndx].suit << " ";
+         cout << unshuffled[ndx].rank << " ";
+         cout << unshuffled[ndx].location << endl;
+         ndx++;
+      }
+*/
+   
+   // get file name
+   cout << "File Name: "; 
+   cin >> filename;
+   
+   // open file
+   fin.clear();
+   fin.open(filename);
+   
+   // prime loop
+   ndx = 0;
+   fin >> unshuffled[ndx].suit;
+   fin >> unshuffled[ndx].rank;
+   
+   ndx ++;
+   
+   // read in all values
+   while (ndx < 52)
+      {
+         fin >> unshuffled[ndx].suit >> unshuffled[ndx].rank;
+         ndx ++;
+      }
+   
+   // close file
+   fin.close();
+   
+   // show
+   ndx = 0;
+   while (ndx < 52)
+   {
+      cout << unshuffled[ndx].suit << " "<< unshuffled[ndx].rank << endl;
+      ndx ++;
+   }
+   
+   return 0;
+}
+
+// function implementation

@@ -1,0 +1,8 @@
+main: listA-Main.o listN.o
+	g++ listA-Main.o listN.o
+listA-Main.o: listA-Main.cpp 
+	g++ -c listA-Main.cpp
+listN.o: listN.cpp listN.h
+	g++ -c listN.cpp
+clean:
+	rm listN.o listA-Main.o

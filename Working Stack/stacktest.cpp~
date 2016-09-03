@@ -1,0 +1,60 @@
+#include <iostream>
+#include "classes.cpp"
+
+using namespace std;
+
+int main()
+{
+	Stack <card> mystack(10);
+	bool test;
+	card grab ("BITCH", 15, "HI");
+	card grabby("UCNT", 61, "KD");
+	
+	test = mystack.empty();
+	cout << test << endl << endl;
+	test = mystack.full();
+	cout << test << endl << endl;
+	
+	mystack.push(grabby);
+	mystack.push(grab);
+	mystack.push(grab);
+	mystack.push(grab);
+	mystack.push(grabby);
+	mystack.push(grab);
+	mystack.push(grab);
+	mystack.push(grab);
+	mystack.push(grab);
+	mystack.push(grab);
+
+
+	test = mystack.empty();
+	cout << test << endl << endl;
+	test = mystack.full();
+	cout << test << endl << endl;
+
+		mystack.pop(grab);
+	cout << grab << endl;
+		mystack.pop(grab);
+	cout << grab << endl;
+		mystack.pop(grab);
+	cout << grab << endl;
+		mystack.pop(grab);
+	cout << grab << endl;
+		mystack.pop(grab);
+	cout << grab << endl;
+		mystack.pop(grab);
+	cout << grab << endl;
+		mystack.pop(grab);
+	cout << grab << endl;
+		mystack.pop(grab);
+	cout << grab << endl;
+		mystack.pop(grab);
+	cout << grab << endl;
+		mystack.pop(grab);
+	cout << grab << endl;
+
+		test = mystack.pop(grab);
+	cout << test << endl;
+	
+	return 0;
+}

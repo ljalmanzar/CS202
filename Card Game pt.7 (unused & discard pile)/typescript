@@ -1,0 +1,526 @@
+Script started on Wed 02 Apr 2014 11:15:10 AM PDT
+]0;luis@luis-VirtualBox: ~/projects/project8luis@luis-VirtualBox:~/projects/project8$ make
+g++ -c project8.cpp
+g++ -c classes.cpp
+g++ project8.o classes.o
+]0;luis@luis-VirtualBox: ~/projects/project8luis@luis-VirtualBox:~/projects/project8$ ./a.out
+[H[2J**************
+*CRAZY EIGHTS*
+**************
+
+Enter deck file name: deck
+
+Enter player name file: names
+
+How many players (2-8) will be playing? 2
+**************
+*CRAZY EIGHTS*
+**************
+
+1) Shuffle Deck
+2) Deal Cards
+3) Print Unshuffled Deck on Screen
+4) Print Shuffled Deck on Screen
+5) Show stock and discard piles
+6) Show Players + ID #'s
+
+7) Quit
+
+Enter 1-7: 1
+
+**************
+*CRAZY EIGHTS*
+**************
+
+1) Shuffle Deck
+2) Deal Cards
+3) Print Unshuffled Deck on Screen
+4) Print Shuffled Deck on Screen
+5) Show stock and discard piles
+6) Show Players + ID #'s
+
+7) Quit
+
+Enter 1-7: 2
+
+**************
+*CRAZY EIGHTS*
+**************
+
+1) Shuffle Deck
+2) Deal Cards
+3) Print Unshuffled Deck on Screen
+4) Print Shuffled Deck on Screen
+5) Show stock and discard piles
+6) Show Players + ID #'s
+
+7) Quit
+
+Enter 1-7: 3
+
+heart 1 Unshuffled
+heart 2 Unshuffled
+heart 3 Unshuffled
+heart 4 Unshuffled
+heart 5 Unshuffled
+heart 6 Unshuffled
+heart 7 Unshuffled
+heart 8 Unshuffled
+heart 9 Unshuffled
+heart 10 Unshuffled
+heart 11 Unshuffled
+heart 12 Unshuffled
+heart 13 Unshuffled
+diamond 1 Unshuffled
+diamond 2 Unshuffled
+diamond 3 Unshuffled
+diamond 4 Unshuffled
+diamond 5 Unshuffled
+diamond 6 Unshuffled
+diamond 7 Unshuffled
+diamond 8 Unshuffled
+diamond 9 Unshuffled
+diamond 10 Unshuffled
+diamond 11 Unshuffled
+diamond 12 Unshuffled
+diamond 13 Unshuffled
+spade 1 Unshuffled
+spade 2 Unshuffled
+spade 3 Unshuffled
+spade 4 Unshuffled
+spade 5 Unshuffled
+spade 6 Unshuffled
+spade 7 Unshuffled
+spade 8 Unshuffled
+spade 9 Unshuffled
+spade 10 Unshuffled
+spade 11 Unshuffled
+spade 12 Unshuffled
+spade 13 Unshuffled
+club 1 Unshuffled
+club 2 Unshuffled
+club 3 Unshuffled
+club 4 Unshuffled
+club 5 Unshuffled
+club 6 Unshuffled
+club 7 Unshuffled
+club 8 Unshuffled
+club 9 Unshuffled
+club 10 Unshuffled
+club 11 Unshuffled
+club 12 Unshuffled
+club 13 Unshuffled
+**************
+*CRAZY EIGHTS*
+**************
+
+1) Shuffle Deck
+2) Deal Cards
+3) Print Unshuffled Deck on Screen
+4) Print Shuffled Deck on Screen
+5) Show stock and discard piles
+6) Show Players + ID #'s
+
+7) Quit
+
+Enter 1-7: 4
+
+spade 12 Shuffled
+spade 13 Shuffled
+spade 10 Shuffled
+spade 7 Shuffled
+spade 5 Shuffled
+spade 3 Shuffled
+spade 2 Shuffled
+club 4 Shuffled
+spade 8 Shuffled
+spade 9 Shuffled
+diamond 11 Shuffled
+heart 4 Shuffled
+heart 12 Shuffled
+heart 2 Shuffled
+heart 3 Shuffled
+club 12 Shuffled
+diamond 1 Shuffled
+heart 13 Shuffled
+heart 5 Shuffled
+spade 4 Shuffled
+diamond 9 Shuffled
+heart 11 Shuffled
+diamond 2 Shuffled
+diamond 7 Shuffled
+club 10 Shuffled
+club 13 Shuffled
+diamond 3 Shuffled
+club 8 Shuffled
+club 6 Shuffled
+club 9 Shuffled
+heart 6 Shuffled
+club 3 Shuffled
+heart 10 Shuffled
+heart 1 Shuffled
+diamond 4 Shuffled
+diamond 5 Shuffled
+club 1 Shuffled
+diamond 8 Shuffled
+club 7 Shuffled
+diamond 6 Shuffled
+heart 9 Shuffled
+club 2 Shuffled
+spade 1 Shuffled
+spade 6 Shuffled
+club 5 Shuffled
+spade 11 Shuffled
+diamond 13 Shuffled
+diamond 10 Shuffled
+club 11 Shuffled
+heart 8 Shuffled
+diamond 12 Shuffled
+heart 7 Shuffled
+**************
+*CRAZY EIGHTS*
+**************
+
+1) Shuffle Deck
+2) Deal Cards
+3) Print Unshuffled Deck on Screen
+4) Print Shuffled Deck on Screen
+5) Show stock and discard piles
+6) Show Players + ID #'s
+
+7) Quit
+
+Enter 1-7: 5
+
+---Stock---
+diamond 11 Stock
+heart 4 Stock
+heart 12 Stock
+heart 2 Stock
+heart 3 Stock
+club 12 Stock
+diamond 1 Stock
+heart 13 Stock
+heart 5 Stock
+spade 4 Stock
+diamond 9 Stock
+heart 11 Stock
+diamond 2 Stock
+diamond 7 Stock
+club 10 Stock
+club 13 Stock
+diamond 3 Stock
+club 8 Stock
+club 6 Stock
+club 9 Stock
+heart 6 Stock
+club 3 Stock
+heart 10 Stock
+heart 1 Stock
+diamond 4 Stock
+diamond 5 Stock
+club 1 Stock
+diamond 8 Stock
+club 7 Stock
+diamond 6 Stock
+heart 9 Stock
+club 2 Stock
+spade 1 Stock
+spade 6 Stock
+club 5 Stock
+spade 11 Stock
+diamond 13 Stock
+diamond 10 Stock
+club 11 Stock
+heart 8 Stock
+diamond 12 Stock
+
+---Discard---
+
+heart 7 Discard
+**************
+*CRAZY EIGHTS*
+**************
+
+1) Shuffle Deck
+2) Deal Cards
+3) Print Unshuffled Deck on Screen
+4) Print Shuffled Deck on Screen
+5) Show stock and discard piles
+6) Show Players + ID #'s
+
+7) Quit
+
+Enter 1-7: 6
+
+Lebron 79326
+spade 12 Lebron spade 10 Lebron spade 5 Lebron spade 2 Lebron spade 8 Lebron 
+
+Carlan 31769
+spade 13 Carlan spade 7 Carlan spade 3 Carlan club 4 Carlan spade 9 Carlan 
+
+**************
+*CRAZY EIGHTS*
+**************
+
+1) Shuffle Deck
+2) Deal Cards
+3) Print Unshuffled Deck on Screen
+4) Print Shuffled Deck on Screen
+5) Show stock and discard piles
+6) Show Players + ID #'s
+
+7) Quit
+
+Enter 1-7: 1
+
+**************
+*CRAZY EIGHTS*
+**************
+
+1) Shuffle Deck
+2) Deal Cards
+3) Print Unshuffled Deck on Screen
+4) Print Shuffled Deck on Screen
+5) Show stock and discard piles
+6) Show Players + ID #'s
+
+7) Quit
+
+Enter 1-7: 2
+
+**************
+*CRAZY EIGHTS*
+**************
+
+1) Shuffle Deck
+2) Deal Cards
+3) Print Unshuffled Deck on Screen
+4) Print Shuffled Deck on Screen
+5) Show stock and discard piles
+6) Show Players + ID #'s
+
+7) Quit
+
+Enter 1-7: 3
+
+heart 1 Unshuffled
+heart 2 Unshuffled
+heart 3 Unshuffled
+heart 4 Unshuffled
+heart 5 Unshuffled
+heart 6 Unshuffled
+heart 7 Unshuffled
+heart 8 Unshuffled
+heart 9 Unshuffled
+heart 10 Unshuffled
+heart 11 Unshuffled
+heart 12 Unshuffled
+heart 13 Unshuffled
+diamond 1 Unshuffled
+diamond 2 Unshuffled
+diamond 3 Unshuffled
+diamond 4 Unshuffled
+diamond 5 Unshuffled
+diamond 6 Unshuffled
+diamond 7 Unshuffled
+diamond 8 Unshuffled
+diamond 9 Unshuffled
+diamond 10 Unshuffled
+diamond 11 Unshuffled
+diamond 12 Unshuffled
+diamond 13 Unshuffled
+spade 1 Unshuffled
+spade 2 Unshuffled
+spade 3 Unshuffled
+spade 4 Unshuffled
+spade 5 Unshuffled
+spade 6 Unshuffled
+spade 7 Unshuffled
+spade 8 Unshuffled
+spade 9 Unshuffled
+spade 10 Unshuffled
+spade 11 Unshuffled
+spade 12 Unshuffled
+spade 13 Unshuffled
+club 1 Unshuffled
+club 2 Unshuffled
+club 3 Unshuffled
+club 4 Unshuffled
+club 5 Unshuffled
+club 6 Unshuffled
+club 7 Unshuffled
+club 8 Unshuffled
+club 9 Unshuffled
+club 10 Unshuffled
+club 11 Unshuffled
+club 12 Unshuffled
+club 13 Unshuffled
+**************
+*CRAZY EIGHTS*
+**************
+
+1) Shuffle Deck
+2) Deal Cards
+3) Print Unshuffled Deck on Screen
+4) Print Shuffled Deck on Screen
+5) Show stock and discard piles
+6) Show Players + ID #'s
+
+7) Quit
+
+Enter 1-7: 4
+
+club 2 Shuffled
+club 4 Shuffled
+club 1 Shuffled
+diamond 7 Shuffled
+club 13 Shuffled
+spade 5 Shuffled
+diamond 8 Shuffled
+diamond 4 Shuffled
+spade 10 Shuffled
+heart 1 Shuffled
+spade 2 Shuffled
+club 6 Shuffled
+spade 1 Shuffled
+spade 7 Shuffled
+heart 5 Shuffled
+spade 9 Shuffled
+club 12 Shuffled
+spade 8 Shuffled
+heart 6 Shuffled
+spade 4 Shuffled
+heart 8 Shuffled
+diamond 1 Shuffled
+diamond 5 Shuffled
+diamond 12 Shuffled
+heart 3 Shuffled
+club 5 Shuffled
+heart 12 Shuffled
+club 3 Shuffled
+diamond 10 Shuffled
+diamond 13 Shuffled
+diamond 2 Shuffled
+heart 2 Shuffled
+spade 6 Shuffled
+diamond 6 Shuffled
+heart 10 Shuffled
+heart 7 Shuffled
+spade 12 Shuffled
+heart 11 Shuffled
+heart 9 Shuffled
+diamond 9 Shuffled
+heart 13 Shuffled
+club 10 Shuffled
+club 7 Shuffled
+club 11 Shuffled
+spade 11 Shuffled
+heart 4 Shuffled
+club 9 Shuffled
+diamond 11 Shuffled
+club 8 Shuffled
+spade 3 Shuffled
+diamond 3 Shuffled
+spade 13 Shuffled
+**************
+*CRAZY EIGHTS*
+**************
+
+1) Shuffle Deck
+2) Deal Cards
+3) Print Unshuffled Deck on Screen
+4) Print Shuffled Deck on Screen
+5) Show stock and discard piles
+6) Show Players + ID #'s
+
+7) Quit
+
+Enter 1-7: 5
+
+---Stock---
+spade 2 Stock
+club 6 Stock
+spade 1 Stock
+spade 7 Stock
+heart 5 Stock
+spade 9 Stock
+club 12 Stock
+spade 8 Stock
+heart 6 Stock
+spade 4 Stock
+heart 8 Stock
+diamond 1 Stock
+diamond 5 Stock
+diamond 12 Stock
+heart 3 Stock
+club 5 Stock
+heart 12 Stock
+club 3 Stock
+diamond 10 Stock
+diamond 13 Stock
+diamond 2 Stock
+heart 2 Stock
+spade 6 Stock
+diamond 6 Stock
+heart 10 Stock
+heart 7 Stock
+spade 12 Stock
+heart 11 Stock
+heart 9 Stock
+diamond 9 Stock
+heart 13 Stock
+club 10 Stock
+club 7 Stock
+club 11 Stock
+spade 11 Stock
+heart 4 Stock
+club 9 Stock
+diamond 11 Stock
+club 8 Stock
+spade 3 Stock
+diamond 3 Stock
+
+---Discard---
+
+spade 13 Discard
+**************
+*CRAZY EIGHTS*
+**************
+
+1) Shuffle Deck
+2) Deal Cards
+3) Print Unshuffled Deck on Screen
+4) Print Shuffled Deck on Screen
+5) Show stock and discard piles
+6) Show Players + ID #'s
+
+7) Quit
+
+Enter 1-7: 6
+
+Lebron 79326
+club 2 Lebron club 1 Lebron club 13 Lebron diamond 8 Lebron spade 10 Lebron 
+
+Carlan 31769
+club 4 Carlan diamond 7 Carlan spade 5 Carlan diamond 4 Carlan heart 1 Carlan 
+
+**************
+*CRAZY EIGHTS*
+**************
+
+1) Shuffle Deck
+2) Deal Cards
+3) Print Unshuffled Deck on Screen
+4) Print Shuffled Deck on Screen
+5) Show stock and discard piles
+6) Show Players + ID #'s
+
+7) Quit
+
+Enter 1-7: 7
+
+]0;luis@luis-VirtualBox: ~/projects/project8luis@luis-VirtualBox:~/projects/project8$ exit
+exit
+
+Script done on Wed 02 Apr 2014 11:15:36 AM PDT
